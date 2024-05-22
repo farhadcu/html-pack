@@ -1,19 +1,4 @@
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.portfolio-single.mb-30 img {
-    width: 100%;
-}
-
-.portfolio-menu button {
-    background: #000;
-    border: 0;
-    color: #fff;
-    padding: 9px 25px;
-    text-transform: uppercase;
-}
-
-.portfolio-menu button.active {
-    background: red;
+/* for animate-headline */
+.animated-text h2.cd-headline span {
+    padding: 0;
 }
