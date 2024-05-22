@@ -1,4 +1,86 @@
-/* for animate-headline */
-.animated-text h2.cd-headline span {
-    padding: 0;
+.team-box {
+    position: relative;
+}
+
+/* image hover */
+.team-img {
+    position: relative;
+}
+
+.team-img::before {
+    content: "";
+    background: red;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+
+.team-img:hover::before {
+    opacity: .5;
+    visibility: visible;
+    height: 50%;
+}
+
+.team-img::after {
+    content: "";
+    background: yellow;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    transition: .3s;
+    visibility: hidden;
+    bottom: 0;
+}
+
+.team-img:hover:after {
+    opacity: .5;
+    visibility: visible;
+    height: 50%;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+/* icon  */
+.team-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    /* margin: auto; width thakle*/
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* content  */
+.team-content h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.team-content h4::before {
+    content: "";
+    background: red;
+    height: 2px;
+    width: 45px;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    left: 0;
+    /* text-align: center; */
+    /*works when no width and make center*/
+    /* margin: auto; */
+    /*works with width and make center*/
+}
+
+.team-content span {
+    display: block;
 }
