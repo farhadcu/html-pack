@@ -1,3 +1,12 @@
 .zoom-img img {
     width: 100%;
 }
+
+/* selection  */
+p::-moz-selection {
+    background: red;
+}
+
+P::selection {
+    background: red;
+}

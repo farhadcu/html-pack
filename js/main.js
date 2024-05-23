@@ -14,5 +14,8 @@ $(document).ready(function () {
         lensSize: 150,
     });
 
+    //nice select jquery activation
+    $('select').niceSelect();
+
 
 })
