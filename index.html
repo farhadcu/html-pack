@@ -23,44 +23,25 @@
 
 <body>
 
-  <div class="zoom-area">
+  <div class="contact-area">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4">
-          <div class="zoom-img">
-            <img class="zoom-01" src="img/small/image1.png" alt="" data-zoom-image="img/large/image1.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-4">
-          <div class="select-bar">
-            <select name="" id="">
-              <option value="">fashion style 1</option>
-              <option value="">fashion style 2</option>
-              <option value="">fashion style 3</option>
-              <option value="">fashion style 4</option>
-              <option value="">fashion style 5</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-6">
-          <div class="bg-color">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti pariatur alias explicabo autem
-              praesentium voluptatum asperiores numquam distinctio, eligendi architecto natus voluptate labore
-              exercitationem aliquam repudiandae eos, aspernatur deserunt neque obcaecati quam. Suscipit eveniet aliquam
-              placeat at quos ab, necessitatibus odio tenetur illo sapiente. Molestiae totam quaerat veniam. Sint,
-              dolorem!</p>
+        <div class="col-xl-5">
+          <div class="contact-form">
+            <form id="contact-form" action="mail.php" method="post">
+              <input name="name" type="text" placeholder="Name">
+              <input name="email" type="email" placeholder="Email">
+              <input name="subject" type="text" placeholder="subject">
+              <textarea name="message" id="" cols="30" rows="10" placeholder="Message here">
+            </textarea>
+              <button type="submit">Send message</button>
+            </form>
+            <p class="form-message"></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -76,6 +57,8 @@
   <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
   <!-- nice select js  -->
   <script src="js/jquery.nice-select.min.js"></script>
+  <!-- ajax-mail  -->
+  <script src="js/ajax-mail.js"></script>
   <!-- Boilerplate 6.1 -->
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
