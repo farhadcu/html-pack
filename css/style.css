@@ -1,27 +1,25 @@
-.contact-form input {
+.img img {
     width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 0 15px;
 }
 
-.contact-form textarea {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 0 15px;
-}
-
-.contact-form button {
-    background: #000;
-    color: #fff;
-    border: 0;
-    padding: 20px 30px;
-    text-transform: uppercase;
+.img {
+    position: relative;
+    overflow: hidden;
 }
 
 
+.secondary-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    /* opacity: 0; */
+    /* transform: translateX(-100%); */
+    transform: translateY(-100%);
+}
 
-
+.img:hover .secondary-img {
+    /* opacity: 1; */
+    /* transform: translateX(0); */
+    transform: translateY(0);
+}
